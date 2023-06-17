@@ -32,6 +32,8 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     #[TODO] - Add the app to the list of INSTALLED_APPS
+    # registers the app when it runs the project
+    'dog_shelters.apps.DogSheltersConfig',
     
     'django.contrib.admin',
     'django.contrib.auth',
