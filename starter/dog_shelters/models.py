@@ -13,9 +13,8 @@ class Shelter(models.Model):
 
 class Dog(models.Model):
     name = models.CharField(max_length=200)
-    description = models.TextField(max_length=500)
+    description = models.TextField(max_length=500, blank=True, null=False)
     intake_date = models.DateTimeField(auto_now_add=True)
-
     shelter = models.ForeignKey(
         Shelter,
         on_delete=models.PROTECT
